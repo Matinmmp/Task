@@ -1,0 +1,19 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000T\u0000a\u0000s\u0000k\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx tailwindcss -i ./assets/styles/input.css -o ./assets/styles/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "daisyui": "^2.51.6",
+    "gsap": "^3.11.5"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
