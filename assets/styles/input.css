@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.box{
+    @apply w-11/12 sm:w-7/12  h-[80vh] bg-primary-content border-[.2rem] lg:w-4/12 rounded-lg p-4 text-center ;
+    
+}
+.box > div{
+    -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.box > div::-webkit-scrollbar{
+    display: none;
+}
+.boxitem{
+    @apply px-4 py-3 h-56 rounded-sm border-2 border-primary mb-3;
+}
+
+.boxbutton{
+    @apply  min-w-[1rem] btn btn-outline px-6 sm:min-w-[4rem] flex items-center justify-center;
+}

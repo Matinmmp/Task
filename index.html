@@ -1,18 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/output.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,700,0,-25" />
     <title>Document</title>
 </head>
-<body>
-    
 
-   
+<body>
+
+
+    <header class="py-10">
+        <div
+            class=" w-[90vw]  flex flex-col  sm:flex-row  md:w-[95vw] lg:w-[90vw] xl:w[85vw] 2xl:w-[80vw] mx-auto gap-2 mx-auto">
+            <input type="text" placeholder="Todo title"
+                class=" w-full sm:w-6/12   input input-bordered input-success" />
+            <input type="date" class="w-full sm:w-4/12  input input-bordered input-success " />
+            <button class=" w-full sm:w-2/12 btn btn-success btn-outline  ">Sub</button>
+        </div>
+    </header>
+
+    <section class="py-4">
+        <div
+            class="md:w-[95vw] lg:w-[90vw] xl:w[85vw] 2xl:w-[80vw] mx-auto flex justify-center flex-wrap lg:flex-nowrap gap-2">
+
+            <section id="task" class="box border-accent-focus">
+
+                <header class="text-2xl pb-2"> Tasks </header>
+
+                <div class="p-4 min-h-[80%] max-h-[90%] overflow-y-auto " >
+
+                    <section class="boxitem ">
+                        <header class="pb-6 flex justify-between ">
+                            <h4 class="text-lg font-bold">test</h4>
+                            <span>X</span>
+                        </header>
+                        <div class="text-left">
+                            <div>
+                                <span>Start:</span> <span>12/12/12</span>
+                            </div>
+                            <div class="mt-2">
+                                <span>End:</span> <span>12/12/12</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center gap-1 mt-8">
+                            <button class="boxbutton  btn-warning">-</button>
+                            <button class="boxbutton  btn-info lowercase " style="text-transform: lowercase;">i</button>
+                            <button class="boxbutton  btn-success ">✓</button>
+                        </div>
+                    </section>
+
+                    <section class="boxitem ">
+                        <header class="pb-6 flex justify-between ">
+                            <h4 class="text-lg font-bold">test</h4>
+                            <span>X</span>
+                        </header>
+                        <div class="text-left">
+                            <div>
+                                <span>Start:</span> <span>12/12/12</span>
+                            </div>
+                            <div class="mt-2">
+                                <span>End:</span> <span>12/12/12</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center gap-1 mt-8">
+                            <button class="boxbutton  btn-warning">-</button>
+                            <button class="boxbutton  btn-info lowercase " style="text-transform: lowercase;">i</button>
+                            <button class="boxbutton  btn-success ">✓</button>
+                        </div>
+                    </section>
+
+                    <section class="boxitem ">
+                        <header class="pb-6 flex justify-between ">
+                            <h4 class="text-lg font-bold">test</h4>
+                            <span>X</span>
+                        </header>
+                        <div class="text-left">
+                            <div>
+                                <span>Start:</span> <span>12/12/12</span>
+                            </div>
+                            <div class="mt-2">
+                                <span>End:</span> <span>12/12/12</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center gap-1 mt-8">
+                            <button class="boxbutton  btn-warning">-</button>
+                            <button class="boxbutton  btn-info lowercase " style="text-transform: lowercase;">i</button>
+                            <button class="boxbutton  btn-success ">✓</button>
+                        </div>
+                    </section>
+                    <section class="boxitem ">
+                        <header class="pb-6 flex justify-between ">
+                            <h4 class="text-lg font-bold">test</h4>
+                            <span>X</span>
+                        </header>
+                        <div class="text-left">
+                            <div>
+                                <span>Start:</span> <span>12/12/12</span>
+                            </div>
+                            <div class="mt-2">
+                                <span>End:</span> <span>12/12/12</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center gap-1 mt-8">
+                            <button class="boxbutton  btn-warning">-</button>
+                            <button class="boxbutton  btn-info lowercase " style="text-transform: lowercase;">i</button>
+                            <button class="boxbutton  btn-success ">✓</button>
+                        </div>
+                    </section>
+
+                </div>
+
+            </section>
+
+            <section id="doing" class="box border-warning
+            ">
+                <header class="text-2xl"> Doing </header>
+                <div class="p-4 min-h-[80%] max-h-[90%] overflow-y-auto">
+
+                </div>
+            </section>
+
+            <section id="complet" class="box border-success
+            ">
+                <header class="text-2xl"> Completed </header>
+                <div class="p-4 min-h-[80%] max-h-[90%] overflow-y-auto">
+
+                </div>
+            </section>
+        </div>
+    </section>
 
 
     <script src="assets/scripts/app.js"></script>
 </body>
+
 </html>
