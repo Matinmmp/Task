@@ -14,17 +14,28 @@
 <body>
 
 
-    <header class="py-10">
-        <div
-            class=" w-[90vw]  flex flex-col  sm:flex-row  md:w-[95vw] lg:w-[90vw] xl:w[85vw] 2xl:w-[80vw] mx-auto gap-2 mx-auto">
-            <input type="text" placeholder="Todo title"
-                class=" w-full sm:w-6/12   input input-bordered input-success" />
-            <input type="date" class="w-full sm:w-4/12  input input-bordered input-success " />
-            <button class=" w-full sm:w-2/12 btn btn-success btn-outline  ">Sub</button>
+    <header class="py-10 ">
+        <div class=" w-[90vw]  flex flex-wrap  md:w-[95vw] lg:w-[90vw] xl:w[85vw] 2xl:w-[80vw] mx-auto gap-2">
+            <input id="title" type="text" placeholder="Todo title"
+                class=" w-full  input input-bordered input-success" />
+            <textarea id="description" cols="10" rows="2" placeholder="Description"
+                class="w-full textarea textarea-bordered textarea-success"></textarea>
+
+            <div class="flex flex-wrap sm:flex-nowrap items-end w-full gap-2">
+                <div class="w-full sm:w-5/12 ">
+                    <label class="label-text text-success">Start Date</label>
+                    <input id="startDate" type="date" class="w-full input input-bordered input-success mt-1" />
+                </div>
+                <div class="w-full sm:w-5/12 ">
+                    <label class="label-text text-success pb-4">End Date</label>
+                    <input id="endDate" type="date" class="w-full input input-bordered input-success  mt-1" />
+                </div>
+                <button id="sub" class=" w-full sm:w-2/12 btn btn-success btn-outline  ">Sub</button>
+            </div>
         </div>
     </header>
 
-    <section class="py-4">
+    <section class="py-4 ">
         <div
             class="md:w-[95vw] lg:w-[90vw] xl:w[85vw] 2xl:w-[80vw] mx-auto flex justify-center flex-wrap lg:flex-nowrap gap-2">
 
@@ -32,9 +43,9 @@
 
                 <header class="text-2xl pb-2"> Tasks </header>
 
-                <div class="p-4 min-h-[80%] max-h-[90%] overflow-y-auto " >
+                <div class="p-4 min-h-[80%] max-h-[90%] overflow-y-auto body">
 
-                    <section class="boxitem ">
+                    <!-- <section class="boxitem ">
                         <header class="pb-6 flex justify-between ">
                             <h4 class="text-lg font-bold">test</h4>
                             <span>X</span>
@@ -52,83 +63,24 @@
                             <button class="boxbutton  btn-info lowercase " style="text-transform: lowercase;">i</button>
                             <button class="boxbutton  btn-success ">✓</button>
                         </div>
-                    </section>
+                    </section> -->
 
-                    <section class="boxitem ">
-                        <header class="pb-6 flex justify-between ">
-                            <h4 class="text-lg font-bold">test</h4>
-                            <span>X</span>
-                        </header>
-                        <div class="text-left">
-                            <div>
-                                <span>Start:</span> <span>12/12/12</span>
-                            </div>
-                            <div class="mt-2">
-                                <span>End:</span> <span>12/12/12</span>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-center gap-1 mt-8">
-                            <button class="boxbutton  btn-warning">-</button>
-                            <button class="boxbutton  btn-info lowercase " style="text-transform: lowercase;">i</button>
-                            <button class="boxbutton  btn-success ">✓</button>
-                        </div>
-                    </section>
 
-                    <section class="boxitem ">
-                        <header class="pb-6 flex justify-between ">
-                            <h4 class="text-lg font-bold">test</h4>
-                            <span>X</span>
-                        </header>
-                        <div class="text-left">
-                            <div>
-                                <span>Start:</span> <span>12/12/12</span>
-                            </div>
-                            <div class="mt-2">
-                                <span>End:</span> <span>12/12/12</span>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-center gap-1 mt-8">
-                            <button class="boxbutton  btn-warning">-</button>
-                            <button class="boxbutton  btn-info lowercase " style="text-transform: lowercase;">i</button>
-                            <button class="boxbutton  btn-success ">✓</button>
-                        </div>
-                    </section>
-                    <section class="boxitem ">
-                        <header class="pb-6 flex justify-between ">
-                            <h4 class="text-lg font-bold">test</h4>
-                            <span>X</span>
-                        </header>
-                        <div class="text-left">
-                            <div>
-                                <span>Start:</span> <span>12/12/12</span>
-                            </div>
-                            <div class="mt-2">
-                                <span>End:</span> <span>12/12/12</span>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-center gap-1 mt-8">
-                            <button class="boxbutton  btn-warning">-</button>
-                            <button class="boxbutton  btn-info lowercase " style="text-transform: lowercase;">i</button>
-                            <button class="boxbutton  btn-success ">✓</button>
-                        </div>
-                    </section>
 
                 </div>
 
             </section>
 
-            <section id="doing" class="box border-warning
-            ">
+            <section id="doing" class="box border-warning">
                 <header class="text-2xl"> Doing </header>
-                <div class="p-4 min-h-[80%] max-h-[90%] overflow-y-auto">
+                <div class="p-4 min-h-[80%] max-h-[90%] overflow-y-auto body">
 
                 </div>
             </section>
 
-            <section id="complet" class="box border-success
-            ">
+            <section id="complete" class="box border-success">
                 <header class="text-2xl"> Completed </header>
-                <div class="p-4 min-h-[80%] max-h-[90%] overflow-y-auto">
+                <div class="p-4 min-h-[80%] max-h-[90%] overflow-y-auto body">
 
                 </div>
             </section>
@@ -136,7 +88,7 @@
     </section>
 
 
-    <script src="assets/scripts/app.js"></script>
+    <script type="module" src="assets/scripts/app.js"></script>
 </body>
 
 </html>
